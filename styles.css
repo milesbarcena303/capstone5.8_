@@ -1,0 +1,253 @@
+/* Variables */
+:root {
+  --main-bg-color: #376d1d;
+  --main-text-color: #ffffff;
+  --second-text-color: #74b113;
+  --third-text-color: #000000;
+  --second-bg-color: #c1efde;
+}
+
+/* Common Styles */
+.rounded-full {
+  border-radius: 100%;
+}
+
+/* Wrapper and Page Content Styles */
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #376d1d, #83ce21, #aff331, #a2bb32, #58c01c);
+}
+
+#page-content-wrapper form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#training-console {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: pre-wrap;
+}
+
+/* Sidebar Styles */
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 20rem; /* Initial width, set to 0 to hide it */
+  transition: width 0.25s ease-out;
+  background-image: linear-gradient(to bottom, #376d1d, #83ce21);
+  color: var(--main-text-color); /* Text color */
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 1rem 1.25rem; /* Increase the padding for better readability */
+  font-size: 1.2rem;
+  color: var(--second-text-color); /* Use secondary text color for the heading */
+}
+
+#sidebar-wrapper .list-group {
+  width: 100%; /* Make the list group full width of the sidebar */
+}
+
+/* Responsive Styles */
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  display: none; /* Initially hide the content */
+}
+
+#wrapper.d-flex #page-content-wrapper {
+  display: block; /* Show the content when the "d-flex" class is applied */
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #272626;
+  color: #fff; /* Set the default text color to white in dark mode */
+}
+
+body.dark-mode #page-content-wrapper form,
+body.dark-mode #sidebar-wrapper {
+  background-color: #070707;
+  color: #fff; /* Set the text color to white in dark mode */
+  background-image: none;
+}
+
+body.dark-mode #wrapper {
+  background-image: linear-gradient(to right, #111, #222, #333);
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table {
+  background-color: #333;
+  color: #ffffff; /* Set the text color to white in dark mode */
+  border: 1px solid #131212;
+}
+
+body.dark-mode table th {
+  background-color: #222;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table td {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table tbody {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+/* Additional styling for table rows and cells if needed */
+body.dark-mode table tr:nth-child(even) {
+  background-color: #222;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table tr:nth-child(odd) {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+/* Add this to your CSS */
+/* Dark Mode Styles for Modals */
+body.dark-mode .modal-content {
+  background-color: #333333; /* Set dark mode modal background color */
+}
+
+body.dark-mode .modal-content h5.modal-title,
+body.dark-mode .modal-content .modal-body,
+body.dark-mode .modal-content .modal-footer button {
+  color: #ffffff; /* Set dark mode modal text color */
+}
+
+body.dark-mode .modal-content .modal-header {
+  background-color: #555555; /* Set dark mode modal header background color */
+}
+
+body.dark-mode .modal-content .modal-header button {
+  color: #ffffff; /* Set close button text color */
+}
+
+
+body.dark-mode .btn-primary {
+  background-color: #4db6ac; /* Tealish Green */
+  border-color: #4db6ac;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-success {
+  background-color: #4db6ac; /* Tealish Green */
+  border-color: #4db6ac;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-danger {
+  background-color: #D32F2F; /* Dark Red */
+  border-color: #D32F2F;
+  color: #ffffff;
+}
+
+body.dark-mode table td {
+  background-color: #1a1a1a; /* Adjust the color to your preference */
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+.actions-column {
+  width: 150px; /* Adjust the width as needed */
+}
+
+#sidebar-wrapper {
+  width: 250px; /* Adjust this value as needed */
+}
+
+/* Style for the feedback button */
+.feedback-button {
+  background-color: #4CAF50; /* Green background color */
+  color: #FFFFFF; /* White font color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Add rounded corners for a curved shape */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.feedback-button:hover {
+  background-color: #45A049; /* Darker green on hover */
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+/* Add this to your style.css file */
+.feedback-button {
+  background-color: #007bff; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3; /* Change to your desired hover background color */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

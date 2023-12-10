@@ -1,0 +1,325 @@
+{
+    "intents": [
+        {
+            "id": 1,
+            "tag": "admission_result",
+            "patterns": [
+                "Admission result"
+            ],
+            "responses": [
+                "What is the admission fee for CVSU?",
+                "Faq 2",
+                "Faq 3",
+                "Faq 4",
+                "Faq 5"
+            ]
+        },
+        {
+            "id": 2,
+            "tag": "eligibility_criteria",
+            "patterns": [
+                "Eligibility criteria"
+            ],
+            "responses": [
+                "Here is information about Eligibility criteria."
+            ]
+        },
+        {
+            "id": 3,
+            "tag": "documentation_requirements",
+            "patterns": [
+                "Documentation requirements"
+            ],
+            "responses": [
+                "Here is information about Documentation requirements."
+            ]
+        },
+        {
+            "id": 4,
+            "tag": "application_status",
+            "patterns": [
+                "Application status"
+            ],
+            "responses": [
+                "Here is information about Application status.",
+                "Application status.",
+                "Here is information about Application status."
+            ]
+        },
+        {
+            "id": 5,
+            "tag": "application_period",
+            "patterns": [
+                "Application period"
+            ],
+            "responses": [
+                "Here is information about Application period."
+            ]
+        },
+        {
+            "id": 6,
+            "tag": "other",
+            "patterns": [
+                "Other"
+            ],
+            "responses": [
+                "Just type your inquiry in the chatbox if it doesn't have a specific topic."
+            ]
+        },
+        {
+            "id": 7,
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "Hello",
+                "Hello there",
+                "What's up",
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "yo"
+            ],
+            "responses": [
+                "Hello!",
+                "Hi there!",
+                "How can I assist you?",
+                "Hello there!"
+            ]
+        },
+        {
+            "id": 8,
+            "tag": "greeting",
+            "patterns": [
+                "Hello How are you",
+                "Hi How are you",
+                "Hello what's up",
+                "Hi I have some questions about admissions.",
+                "How are you"
+            ],
+            "responses": [
+                "Welcome to the CVSU Admission System chatbot. How can I assist you?",
+                "I'm here to help with your admission questions.",
+                "How can I assist you?",
+                "Feel free to ask your admission questions."
+            ]
+        },
+        {
+            "id": 9,
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "Goodbye! Have a great day.",
+                "Take care!",
+                "Until next time!"
+            ]
+        },
+        {
+            "id": 10,
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, I can't understand you",
+                "Please give me more info",
+                "I'm not sure I understand that"
+            ]
+        },
+        {
+            "id": 11,
+            "tag": "bot_identity",
+            "patterns": [
+                "What are you?",
+                "Who are you?",
+                "Tell me about yourself.",
+                "Introduce yourself.",
+                "What's your role?",
+                "Explain your purpose."
+            ],
+            "responses": [
+                "I'm here to assist with CVSU admission information.",
+                "I provide support for CVSU admissions.",
+                "I help with CVSU admission inquiries."
+            ]
+        },
+        {
+            "id": 12,
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem!",
+                "Glad I could help."
+            ]
+        },
+        {
+            "id": 13,
+            "tag": "university_application_date",
+            "patterns": [
+                "When can I start applying for college admission?",
+                "When is the admission date?",
+                "When is the deadline for college admission applications?"
+            ],
+            "responses": [
+                "Application starts on January 24, 2022. Deadline is April 24, 2022."
+            ]
+        },
+        {
+            "id": 14,
+            "tag": "course_information",
+            "patterns": [
+                "Tell me about computer science courses.",
+                "What courses are available for business majors?"
+            ],
+            "responses": [
+                "Computer Science covers algorithms, programming languages, and data structures. Business majors have Marketing, Finance, and Ethics courses."
+            ]
+        },
+        {
+            "id": 15,
+            "tag": "availability",
+            "patterns": [
+                "When are your customer support hours?",
+                "What's your availability?"
+            ],
+            "responses": [
+                "Support is available from 9 AM to 6 PM, Mon to Fri.",
+                "You can reach us between 9 AM and 6 PM on weekdays."
+            ]
+        },
+        {
+            "id": 16,
+            "tag": "transfer_students",
+            "patterns": [
+                "Can I transfer to your university?",
+                "Are there specific requirements for transfer students?"
+            ],
+            "responses": [
+                "Transferring is possible; provide transcripts and course descriptions.",
+                "Transfers are welcome; submit transcripts and course descriptions."
+            ]
+        },
+        {
+            "id": 17,
+            "tag": "international_students",
+            "patterns": [
+                "I'm an international student. How can I apply?",
+                "What's the application process for international students?"
+            ],
+            "responses": [
+                "International students are welcome; provide English scores and immigration documents.",
+                "International students need English scores and immigration documents."
+            ]
+        },
+        {
+            "id": 18,
+            "tag": "generic_question",
+            "patterns": [
+                "What can you tell me?",
+                "How does this work?",
+                "Can you help me?",
+                "Do you have information?",
+                "Tell me more."
+            ],
+            "responses": [
+                "I provide information about CVSU admissions. Ask specific questions.",
+                "I assist with CVSU admission inquiries. Feel free to ask.",
+                "I help with admission at CVSU. Ask your questions."
+            ]
+        },
+        {
+            "id": 19,
+            "tag": "cvsu_info",
+            "patterns": [
+                "Tell me about CVSU programs.",
+                "What courses does CVSU offer?",
+                "Give me details about CVSU facilities.",
+                "Tell me about CVSU's history.",
+                "What's unique about CVSU?",
+                "Can you provide CVSU contact information?"
+            ],
+            "responses": [
+                "CVSU offers diverse programs. Explore specific majors on the website.",
+                "CVSU provides courses spanning multiple fields. Check our website for details.",
+                "CVSU has modern facilities. Visit the website for more.",
+                "CVSU has a rich history and a commitment to community engagement.",
+                "CVSU's uniqueness lies in its dedication to research and innovation. For contact info, visit the website."
+            ]
+        },
+        {
+            "id": 20,
+            "tag": "admission_fee",
+            "patterns": [
+                "What is the admission fee for CVSU?",
+                "How much does it cost to apply to CVSU?",
+                "Can you tell me the fees for admission at CVSU?"
+            ],
+            "responses": [
+                "Admission fees vary by program. Visit the CVSU website or contact the admission office for current fees."
+            ]
+        },
+        {
+            "id": 21,
+            "tag": "stem_graduate_courses",
+            "patterns": [
+                "I am a STEM graduate. What courses can I take?",
+                "What are the options for STEM graduates?"
+            ],
+            "responses": [
+                "STEM graduates at CVSU can choose from Computer Science, Engineering, Mathematics, Physics, Biology, Chemistry, Environmental Science, and Information Technology. Ask for program details."
+            ]
+        },
+        {
+            "id": 22,
+            "tag": "hey",
+            "patterns": [
+                "skdv;knd",
+                "qqqqq"
+            ],
+            "responses": [
+                "for testing"
+            ]
+        },
+        {
+            "id": 23,
+            "tag": "jjk",
+            "patterns": [
+                "gojo satoru"
+            ],
+            "responses": [
+                "strongest"
+            ]
+        },
+        {
+            "id": 24,
+            "tag": "jjk",
+            "patterns": [
+                "nanami",
+                "hai"
+            ],
+            "responses": [
+                "gento kento"
+            ]
+        },
+        {
+            "id": 25,
+            "tag": "sad",
+            "patterns": [
+                "www"
+            ],
+            "responses": [
+                "ayoko na"
+            ]
+        }
+    ]
+}

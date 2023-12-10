@@ -1,0 +1,10 @@
+pip install Flask torch torchvision nltk
+python
+>>> import nltk
+>>> nltk.download('punkt')
+pip install torch
+pip install torch goose3 better_profanity
+pip install numpy nltk
+pip install Flask better_profanity flask-cors
+pip install numpy torch nltk
+python -m nltk.downloader wordnet
